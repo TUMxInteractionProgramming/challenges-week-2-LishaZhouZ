@@ -5,100 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>chatter|app</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
     <script src="main.js"></script>
-    <style>
-        /* 
-            Background:#f9f8eb
-            Primary text:#000000
-            Primary color:#155e63
-            Primary color text：White
-            Accent color:#76b39d
-            Accent color text:#eae7e7
-        */
-        *{
-            background-color :#f9f8eb;
-            font-family:Arial,sans-serif;
-        }
-        /*top chatter app*/
-    
-        button{
-            background-color:#76b39d;
-            color:#eae7e7;
-            text-transform: uppercase;
-        }
-
-        h1{
-            background-color: #155e63;
-            color: #ffffff;
-        }
-        small{
-            background-color: #155e63;
-            color: #ffffff;
-        }
-
-        p{
-            background-color: #ffffff;
-            font-size: medium;
-        }
-        i{
-            font-size: larger;
-            font-style: normal;
-        }
-
-        li{
-            background-color:#ffffff;
-            list-style-type: none;
-            font-size: large;
-        }
-
-        a{
-            color:#000000;
-        }
-    </style>
+   
 </head>
 <body>
-    <div style="background-color: #155e63;color:#ffffff;">
-        <img src="https://ip.lfe.mw.tum.de/sections/moocus.png" alt="logo duck" height="56">
-        <span style="font-size: xx-large;background-color: #155e63;color:#ffffff;">chatter|app</span></div>
-    <ul >
-        <li>#Cat<img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="star"></li>
+
+<!--app-bar-->
+<h2 class="app-bar">
+    <img src="https://ip.lfe.mw.tum.de/sections/moocus.png" alt="logo duck" height="56">
+    chatter|app
+</h2>
+
+<ul class="Channels-list">
+        <li class="selected">#Cat<img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="star"></li>
         <li>#Yummy<img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="star"></li>
         <li>#Concert<img src="https://ip.lfe.mw.tum.de/sections/star-o.png" alt="star-o"></li>
         <li>#Vocation<img src="https://ip.lfe.mw.tum.de/sections/star-o.png" alt="star-o"></li>
         <li>#Repair<img src="https://ip.lfe.mw.tum.de/sections/star-o.png" alt="star-o"></li>
-    </ul>
+</ul>
+
     
-    <div style="background-color: white">
-        <button type="button"><img src="https://ip.lfe.mw.tum.de/sections/lightbulb-o.png" alt="lightbulb">new</button>
-        <button type="button"><img src="https://ip.lfe.mw.tum.de/sections/fire.png" alt="fire">trending</button>
-        <button type="button"><img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="star">favorites</button>
-    </div>
-    <hr>
-    
-    <div>
-        <h1>#Cat <small>by gelbes.beinen.freudige</small></h1>
-    </div>
+<div id="Tab-bar" >
+        <button type="button" class="selected"><img src="https://ip.lfe.mw.tum.de/sections/lightbulb-o.png" alt="lightbulb"><br>new</button>
+        <button type="button"><img src="https://ip.lfe.mw.tum.de/sections/fire.png" alt="fire"><br>trending</button>
+        <button type="button"><img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="star"><br>favorites</button>
+</div>
 
 
-    <div style="width: 80%">
-    <div>
+
+
+<div  id="message-header"><h1 class="app-bar">#Cat <small>by <a href="https://map.what3words.com/bezahlen.lieb.spitzen" target="_blank">gelbes.beinen.freudige</a></small>
+</h1></div>
+
+    <div class="Messages" >
+        <div class="message-own">
         <h4><a href="https://map.what3words.com/bezahlen.lieb.spitzen" target="_blank">gelbes.beinen.freudige</a> Wed,June 20th, 11:11 <i>20min.</i> left</h4>
         <p>Your cat is so cute!</p>
         <button>+5 min</button>
+        </div>
     </div>
    
-    <div>
+    <div class="Messages">
         <h4><a href="https://map.what3words.com/bezahlen.lieb.spitzen" target="_blank">amtliche.erdnuss.keine</a> Wed,June 20th, 11:13 <i>22min.</i> left</h4>
         <p>I made it shower today.</p>
         <button>+5 min</button>
     </div>
 
-    <div>
+    <div class="Messages">
         <h4><a href="https://map.what3words.com/bezahlen.lieb.spitzen" target="_blank">gelbes.beinen.freudige</a> Wed,June 20th, 11:16 <i>25min.</i> left</h4>
         <p>How can I buy a cat like this?</p>
         <button>+5 min</button>
     </div>
-    </div>
+
 </body>
 </html>

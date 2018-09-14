@@ -1,0 +1,103 @@
+
+/* 
+    Background:#f9f8eb
+    Primary text:#000000
+    Primary color:#155e63
+    Primary color text：White
+    Accent color:#76b39d
+    Accent color text:#eae7e7
+*/
+/*global*/
+*{
+    background-color :#f9f8eb;
+    font-family:Arial,sans-serif;
+    margin:0px;
+    padding:0px;
+}
+
+/*App-bar*/
+.app-bar{
+    background-color: #155e63;
+    color:#ffffff;
+}
+
+
+
+#Tab-bar{
+    background-color: white;
+}
+
+button{
+    background-color:#76b39d;
+    color:#eae7e7;
+    align-content: center;
+}
+
+#message-header small{
+    background-color:#1b4e52;
+}
+#message-header a{
+    color:white;
+}
+.Messages{
+    width: 80%;
+    margin-bottom: 8px;
+    font-size: medium;
+    margin-left: 2.5%;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.Messages * i{
+    font-size: larger;
+    font-style: normal;
+}
+
+.Messages p{
+    background-color: #ffffff;
+    padding: 16px;
+}
+
+a{
+    color:#000000;
+    background-color: inherit;
+}
+
+button,a{
+    text-transform: uppercase;
+}
+
+.Messages .message-own{
+    margin-left: 2.5%;
+}
+
+#Tab-bar button{
+    background-color: #ffffff;
+    border:none;
+    font-size: 13px;
+    color:black;
+    box-sizing: border-box;
+    width: 30%;
+    height:72px;
+    padding:16px;
+}
+#Tab-bar button.selected{
+    border-bottom:4px solid #155e63;
+    color:#155e63;
+}
+
+.Channels-list li{
+    background-color:#ffffff;
+    list-style-type: none;
+    font-size: large;
+    padding: 16px;
+    font-size:16px;
+    box-sizing: border-box;
+    height: 48px;
+    border-bottom:1px solid #f9f8eb;
+}
+
+
+.Channels-list li.selected{
+    color:#155e63;
+    border-left: 4px solid #155e63;
+}
